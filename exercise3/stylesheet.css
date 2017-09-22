@@ -1,10 +1,28 @@
 body {
-  background-image: url(pattern.jpg);
+  background-image: url(background.png);
   background-size: 100%;
+  background-repeat: repeat;
 }
 
 p {
-  background-color: white;
+  background-color: transparent;
   color: black;
+  font-weight: bold;
+  font-size: 150%;
   font-family: Arial;
+}
+.name {
+  color: pink;
+}
+
+a {
+  background-color: transparent;
+  color: pink;
+  font-weight: bold;
+  font-size: 150%;
+  font-family: Arial;
+}
+
+a:hover {
+  color: hotpink;
 }
