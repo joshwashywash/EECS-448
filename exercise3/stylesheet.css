@@ -1,7 +1,6 @@
 body {
   background-image: url(background.png);
   background-size: 100%;
-  background-repeat: repeat;
 }
 
 p {
@@ -11,6 +10,7 @@ p {
   font-size: 150%;
   font-family: Arial;
 }
+
 .name {
   color: hotpink;
 }
@@ -19,7 +19,7 @@ a {
   background-color: transparent;
   color: pink;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 200%;
   font-family: Arial;
 }
 
