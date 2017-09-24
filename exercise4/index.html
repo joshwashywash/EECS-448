@@ -1,22 +1,31 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
   <title>CSS Manipulation</title>
-  <script src="manipulate.js"></script>
+  <script type="text/javascript" src="manipulate.js"></script>
 </head>
 
 <body>
-  <p id="p">There once was a man from Peru
-    </br> who dreamed he was eating his shoe
-    </br> he woke with a fright in the middle of the night
-    </br> to find that his dream had come true
+  <p id="p" style="border-style:solid; border-width:0px">There once was a man from Peru
+    <br> who dreamed he was eating his shoe
+    <br> he woke with a fright in the middle of the night
+    <br> to find that his dream had come true
   </p>
-  <span style="font-weight:bold">
-    Background Color (r, g, b): </br><input id="bgColor" type="text"></br>
-    Border Color (r, g, b): </br><input id="borderColor" type="text"></br>
-  </span>
-  <button type=button onclick="color()">Change BG color</button>
-  <button type=button onclick="border()">Change border color</button>
+  <div style="font-weight:bold;">
+    What background color should the text have?<br>
+    Red [0, 255]: <input id="bgRed" type="number" min="0" max="255" maxlength="3"><br>
+    Green [0, 255]: <input id="bgGreen" type="number" min="0" max="255" maxlength="3"><br>
+    Blue [0, 255]: <input id="bgBlue" type="number" min="0" max="255" maxlength="3"><br>
+    <button type=button onclick="color()">Change Background</button><br>
+    <br>What border color and width should the text have?<br>
+    Red [0, 255]: <input id="brdRed" type="number" min="0" max="255" maxlength="3"><br>
+    Green [0, 255]: <input id="brdGreen" type="number" min="0" max="255" maxlength="3"><br>
+    Blue [0, 255]: <input id="brdBlue" type="number" min="0" max="255" maxlength="3"><br>
+    Width (pixels): <input id="brdWidth" type="number" min="0"><br>
+    <button type=button onclick="border()">Change Border</button>
+  </div>
 </body>
 
 </html>
