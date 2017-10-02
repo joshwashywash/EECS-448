@@ -1,0 +1,13 @@
+body {
+  background:LemonChiffon;
+  font-family:Arial;
+  font-size:150%;
+}
+
+a {
+  color:midnightblue;
+}
+
+a:hover {
+  color:hotpink;
+}
