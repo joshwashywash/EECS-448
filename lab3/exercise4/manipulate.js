@@ -1,5 +1,5 @@
 alert('The HTML utilizes type="number" which may not work if you are using IE9 or earlier versions');
-color = () => {
+const color = () => {
   //set color of background
   document.getElementById('p').style.backgroundColor = "rgb(" +
     document.getElementById('bgRed').value + ", " +
@@ -7,7 +7,7 @@ color = () => {
     document.getElementById('bgBlue').value + ")";
 };
 
-border = () => {
+const border = () => {
   //set border width
   document.getElementById('p').style.borderWidth = document.getElementById('brdWidth').value + "px";
   //set border color

@@ -1,5 +1,5 @@
 //each index corresponds to an image
-let slides = {
+const slides = {
   0: "jigglypuff",
   1: "squirtle",
   2: "snorlax",
@@ -21,11 +21,11 @@ setImage = (i) => {
 }
 
 //increment index, then do a check
-next = () => {
+const next = () => {
   setImage(++index);
 };
 
 //decrement index. then do a check
-back = () => {
+const back = () => {
   setImage(--index);
 }

@@ -18,5 +18,5 @@ document.getElementById('form').addEventListener('submit', action => {
 });
 
 document.querySelector('input[type=button]').addEventListener('click', reset => {
-  location.reload(); //reloads the webpage which resets all inputs
+  location.reload(); //reloads the webpage which resets all input fields
 });
