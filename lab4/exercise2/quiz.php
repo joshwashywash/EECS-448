@@ -11,10 +11,10 @@
     "What color are bluebirds?"
   );
   foreach($questions as $key => $question) {
-    echo "Question {$key}: {$question} Your Answer: {$_POST[$key]}. ";
+    echo "Question ".($key+1).": {$question} Your Answer: {$_POST[$key]}. ";
     echo "<b>".($_POST[$key] === "Blue" ? "Correct" : "Incorrect")."</b><br>";
     if ($_POST[$key] !== "Blue")
-      $score--;
+      $score --;
   }
-  echo "You scored a {$score} out of 5.";
+  echo "You got {$score} out of 5 right. Your percentage is ".($score*20)."%.";
 ?>
