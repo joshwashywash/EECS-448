@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <title>Virtual Vending Machine</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+  <h2>Welcome to the Virtual Vending Machine!</h2>
+  <form id="form" action="customerBackend.php" method="POST">
+    Email: <input type="text" name="email"></input><br> Password: <input type="password" name="password"></input><br>
+    <p>Please make a selection:</p><br>
+    Fresh Water: $1.00 <input name="water" type="number" min="0" max="99" value="0"><br>
+    Soda Pop: $2.00 <input name="soda" type="number" min="0" max="99" value="0"><br>
+    Lemonade: $3.00 <input name="lemonade" type="number" min="0" max="99" value="0"><br>
+    <p>Please select a shipping method:</p><br>
+    <input type="radio" name="shipping" value="0" checked=true> 7-Day: Free<br>
+    <input type="radio" name="shipping" value="1"> 3-Day: $5.00<br>
+    <input type="radio" name="shipping" value="2"> Overnight: $50.00<br>
+    <input type="submit" value="Submit">
+    <input type="button" value="Reset">
+  </form>
+</body>
+<script type="text/javascript" src="formChecker.js"></script>
+
+</html>
