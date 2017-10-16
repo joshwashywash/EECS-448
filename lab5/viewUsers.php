@@ -11,7 +11,7 @@
       }
       echo '</tbody></table>';
   } else {
-      echo 'There are no Usernames in the database.';
+      echo 'There are no Usernames within the database.';
   }
   $result->free();
   $DB->close();
