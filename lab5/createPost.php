@@ -4,11 +4,11 @@
   }
   $DB = new mysqli('mysql.eecs.ku.edu', 'joertel', 'P@$$word123', 'joertel');
   if ($DB->connect_errno) {
-      exit('Connect failed: ' . $DB->connect_error);
+      exit('Connection failed: ' . $DB->connect_error);
   }
-  if ($DB->query("SELECT * FROM Users WHERE ID = '{$_POST['username']}'")->num_rows) {
-      $DB->query("INSERT INTO Posts (content, author) VALUES ('{$_POST['post']}', '{$_POST['username']}')");
-      echo 'Your post was saved in the database.';
+  if ($DB->query(sprintf("SELECT * FROM Users WHERE ID = '%s'", $DB->real_escape_string($_POST['username'])))->num_rows > 0) {
+      $DB->query(sprintf("INSERT INTO Posts (content, author) VALUES ('%s', '%s')", $DB->real_escape_string($_POST['post']), $DB->real_escape_string($_POST['username'])));
+      echo 'Your post was saved to the database.';
   } else {
       echo 'Username was not found in the database. Post rejected.';
   }

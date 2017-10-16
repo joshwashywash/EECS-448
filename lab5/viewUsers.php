@@ -1,7 +1,7 @@
 <?php
   $DB = new mysqli('mysql.eecs.ku.edu', 'joertel', 'P@$$word123', 'joertel');
   if ($DB->connect_errno) {
-      exit('Connect failed: ' . $DB->connect_error);
+      exit('Connection failed: ' . $DB->connect_error);
   }
   $result = $DB->query('SELECT ID FROM Users');
   if ($result->num_rows > 0) {
