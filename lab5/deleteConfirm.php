@@ -1,4 +1,5 @@
 <?php
+  echo "<link rel='stylesheet' type='text/css' href='../../stylesheet.css'>";
   echo '<title>Delete Confirmation</title>';
   $DB = new mysqli('mysql.eecs.ku.edu', 'joertel', 'P@$$word123', 'joertel');
   if ($DB->connect_errno) {

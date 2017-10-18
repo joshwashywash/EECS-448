@@ -1,4 +1,5 @@
 <?php
+  echo "<link rel='stylesheet' type='text/css' href='../../stylesheet.css'>";
   if (empty($_POST['post'])) {
       exit('Post can not be empty.');
   }

@@ -1,5 +1,6 @@
 <?php
-echo "<title>Posts made by {$_POST['user']}</title>";
+  echo "<link rel='stylesheet' type='text/css' href='../../stylesheet.css'>";
+  echo "<title>Posts made by {$_POST['user']}</title>";
   $DB = new mysqli('mysql.eecs.ku.edu', 'joertel', 'P@$$word123', 'joertel');
   if ($DB->connect_errno) {
       exit('Connection failed: ' . $DB->connect_error);

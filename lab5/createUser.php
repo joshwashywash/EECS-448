@@ -1,4 +1,5 @@
 <?php
+  echo "<link rel='stylesheet' type='text/css' href='../../stylesheet.css'>";
   if (empty($_POST['username'])) {
       exit('Username can not be empty.');
   }
