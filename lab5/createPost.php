@@ -11,6 +11,6 @@
       $DB->query(sprintf("INSERT INTO Posts (content, author) VALUES ('%s', '%s')", $DB->real_escape_string($_POST['post']), $DB->real_escape_string($_POST['username'])));
       echo 'Your post was saved to the database.';
   } else {
-      echo 'Username was not found in the database. Post rejected.';
+      echo "{$_POST['username']} was not found in the database. Post rejected.";
   }
   $DB->close();
