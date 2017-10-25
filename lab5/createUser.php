@@ -14,3 +14,6 @@
       echo "{$_POST['username']} has been added to the database.";
   }
   $DB->close();
+  <form action='createUser.html'>
+    <input type="submit" value='Back'>
+  </form>
