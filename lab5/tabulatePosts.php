@@ -17,3 +17,4 @@
   }
   $result->free();
   $DB->close();
+  echo "<br><button onclick='window.history.back();'>Back</button>";

@@ -1,6 +1,6 @@
 <?php
-  echo "<link rel='stylesheet' type='text/css' href='../../stylesheet.css'>";
-  echo '<title>Delete Posts</title>';
+  echo "<link rel='stylesheet' type='text/css' href='../../stylesheet.css'>",
+    '<title>Delete Posts</title>';
   $DB = new mysqli('mysql.eecs.ku.edu', 'joertel', 'P@$$word123', 'joertel');
   if ($DB->connect_errno) {
       exit('Connection failed: ' . $DB->connect_error);
@@ -19,3 +19,4 @@
   }
   $result->free();
   $DB->close();
+  echo "<br><button onclick='window.history.back();'>Back</button>";
