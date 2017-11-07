@@ -5,12 +5,14 @@
 
 class Test {
 public:
-  Test();
+  Test(LinkedListOfInts  *list);
   ~Test();
   void run();
+  bool listEmpty() const;
+  void listSize() const;
 
 private:
-  LinkedListOfInts* m_list = nullptr;
+  LinkedListOfInts *m_list = nullptr;
 };
 
 #endif
