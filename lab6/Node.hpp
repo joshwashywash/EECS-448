@@ -1,8 +1,8 @@
-/**
-*	@author
-*	@date
-*	@file Node.hpp
-*/
+/*
+ *	@author
+ *	@date
+ *	@file Node.hpp
+ */
 
 template <typename T>
 Node<T>::Node(T value) : m_value(value), m_next(nullptr)

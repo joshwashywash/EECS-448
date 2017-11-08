@@ -1,0 +1,7 @@
+﻿Bug list:
+
+1. The isEmpty() function always returns true;
+2. There are memory leaks.
+3. The addBack() function behaves just like addFront(). You can tell this by printing the list after multiple calls to addBack().
+4. The removeFront() function doesn't really remove from the list. This can be verified by printing the list after calling it several times.
+5. The removeBack() function doesn't really remove from the list. This can be verified by printing the list after calling it several times.
